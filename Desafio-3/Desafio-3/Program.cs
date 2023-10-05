@@ -9,8 +9,15 @@
                 Console.Write("Digite o valor total da conta: ");
                 double valorConta = double.Parse(Console.ReadLine());
 
-                Console.Write("Você deseja dar gorjeta de 15% ou 20%: ");
+                if (valorConta < 0)
+                {
+                    Console.WriteLine("Saia, saia imediatamente Corbucci!");
+                    return;
+                }
+
+                Console.Write("Você deseja dar gorjeta de 15% ou 20% (ou 0 para não dar gorjeta): ");
                 double porcentagemGorjeta = double.Parse(Console.ReadLine());
+
                 if (porcentagemGorjeta == 0)
                 {
                     Console.WriteLine("Obrigado. Volte sempre!");
@@ -20,9 +27,9 @@
                     double valorGorjeta = (valorConta * porcentagemGorjeta) / 100.0;
                     double totalPago = valorConta + valorGorjeta;
 
-                    Console.WriteLine($"Valor da gorjeta: R$ {valorGorjeta}");
-                    Console.WriteLine($"Total a ser pago: R$ {totalPago}");
-                }           
+                    Console.WriteLine($"Valor da gorjeta: R$ {valorGorjeta:F2}");
+                    Console.WriteLine($"Total a ser pago: R$ {totalPago:F2}");
+                }
             }
             catch (FormatException)
             {
@@ -35,4 +42,3 @@
         }
     }
 }
-
