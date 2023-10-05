@@ -26,7 +26,7 @@
             }
             catch (FormatException)
             {
-                Console.WriteLine("Entrada inválida. Certifique-se de digitar valores numéricos.");
+                Console.WriteLine("Esse programa só aceita valores numéricos.");
             }
             catch (Exception ex)
             {
