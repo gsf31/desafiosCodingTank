@@ -25,7 +25,7 @@ namespace desafio11
         static void Main(string[] args)
         {
             Console.Write("Digite o salário atual do colaborador: ");
-            string salarioInput = Console.ReadLine().Replace(',', '.'); // Substituir ',' por '.' se necessário
+            string salarioInput = Console.ReadLine().Replace(',', '.'); 
             if (!double.TryParse(salarioInput, NumberStyles.Number, CultureInfo.InvariantCulture, out double salarioAtual) || salarioAtual < 0)
             {
                 Console.WriteLine("Salário inválido. Certifique-se de inserir um valor numérico não negativo.");
