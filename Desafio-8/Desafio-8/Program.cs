@@ -23,7 +23,7 @@ namespace desafio8
         {
             Console.WriteLine("Programa para calcular a média e verificar se o aluno passou no exame.");
 
-            CultureInfo cultureInfo = CultureInfo.InvariantCulture; // Cultura invariável para aceitar ponto ou vírgula como separador decimal
+            CultureInfo cultureInfo = CultureInfo.InvariantCulture;
             double prova1, prova2, prova3;
 
             Console.Write("Digite a nota da Prova 1: ");
