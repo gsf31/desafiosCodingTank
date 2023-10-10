@@ -16,7 +16,7 @@
 
                 if (numero == 0)
                 {
-                    break; // Sai do loop quando o usuário digitar 0
+                    break;
                 }
 
                 numerosLidos++;
